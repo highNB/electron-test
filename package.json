@@ -1,0 +1,31 @@
+{
+  "name": "planb",
+  "productName": "Image Resizer",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . MyApplication --platform=win32 --arch=x64",
+    "dist": "electron-builder"
+  },
+  "author": "jay",
+  "license": "MIT",
+  "dependencies": {
+    "@electron/asar": "^3.2.7",
+    "electron": "^27.0.3",
+    "resize-img": "^2.0.0",
+    "toastify-js": "^1.12.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.6.4",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "your.app.id",
+    "win": {m
+      "target": "NSIS",
+      "icon": "icon.ico"
+    }
+  }
+}
